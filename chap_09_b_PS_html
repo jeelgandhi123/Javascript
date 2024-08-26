@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="practise.css"> -->
+    <title>practise javascript</title>
+</head>
+
+<body>
+    <button id="btn1">click me to change theme</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestiae debitis non?</p>
+    <script>
+        // Qs. Create a toggle button that changes the screen to dark-mode when clicked & light-mode
+        // when clicked again.
+        let btn1 = document.querySelector("#btn1");
+        let currenttheme = "light";
+
+        btn1.addEventListener("click", () => {
+            if (currenttheme === "light") {
+                currenttheme = "dark";
+                document.querySelector("body").style.backgroundColor = "black"
+                document.querySelector("body").style.color = "white"
+            }
+            else {
+                currenttheme = "light"
+                document.querySelector("body").style.backgroundColor = "white"
+                document.querySelector("body").style.color = "black"
+            }
+            console.log(currenttheme)
+        })
+
+    </script>
+    <!-- <script src="practise.js"></script> -->
+</body>
+
+</html>
