@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="practise.css"> -->
+    <style>
+        #box1 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            margin: 5px;
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+    <title>practise javascript</title>
+</head>
+
+<body>
+    <div id="box">this is div </div>
+    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur voluptates sit vitae
+        fugiat? Accusamus saepe rerum itaque similique nostrum perspiciatis nulla consectetur ipsam aut, facere
+        repellat. Explicabo dolores quod reprehenderit!</p>
+    <script>
+        // DOM ATTRIBUTES PART 2
+        let example1 = document.querySelector("div");
+        console.log(example1)
+        let example2 = document.querySelector("p");
+        console.log(example2)
+
+        // getAttribute-to get id or class
+        let example1_id = example1.getAttribute("id")
+        console.log(example1_id)//box
+        let example2_class = example2.getAttribute("class")
+        console.log(example2_class)
+
+        // setaatribute
+        // change the box id to box1
+        let changed_id = example1.setAttribute("id", "box1")
+        console.log(changed_id)
+        // change the paragraph class to newclass
+        let changed_class = example2.setAttribute("class", "newclass");
+        console.log(changed_class)
+
+        // now for style 
+        example1.style.backgroundColor = "green"
+    </script>
+    <!-- <script src="practise.js"></script> -->
+</body>
+
+</html>
