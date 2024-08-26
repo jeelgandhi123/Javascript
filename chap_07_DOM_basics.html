@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practise.css">
+    <title>practise Javascript!!</title>
+</head>
+<body>
+    <h1 id="heading1">hello everyone!!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem consequatur eveniet sunt magni expedita iure! Itaque ipsa delectus recusandae quos laboriosam illum neque quidem voluptatem quisquam reiciendis, ea odit, doloremque minima eius est.</p>
+    <div>
+        <img src="https://shorturl.at/tEvIq" alt="just image" height="100px" class="innerdiv">
+        <p class="innerdiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum beatae nulla deleniti labore eligendi impedit veritatis officiis mollitia dignissimos explicabo, quam quisquam animi ad culpa ipsa distinctio, commodi, sit fuga.</p>
+        <div>
+            <button class="innerdiv">submit</button>
+        </div>
+    </div>
+    <script>
+        console.dir(window)
+console.log(window)
+
+console.dir(document.body);//this will print all the object that body part content
+console.log(document.body);//this will print written text or code in HTML file
+
+document.body.style.background="green"//in line styling 
+// to access element 
+// 1.by id 
+let heading=document.getElementById("heading1")
+console.log(heading);
+
+// 2.by class 
+let content=document.getElementsByClassName("innerdiv")
+console.log(content);
+// it will make html coollection 
+
+// 3.by tag 
+let paragraphs=document.getElementsByTagName("p");
+console.log(paragraphs);
+
+//4. by query selector-it return first element
+let firstpara=document.querySelector("p");
+console.log(firstpara);
+
+// 5.for all elements -it will create nodelist 
+let allelements=document.querySelectorAll("p");
+console.log(allelements);
+    </script>
+    <!-- <script src="practise.js"></script> -->
+</body>
+
+</html>
