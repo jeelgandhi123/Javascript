@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="practise.css"> -->
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            margin: 5px;
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+    <title>practise Javascript!!</title>
+</head>
+
+<body>
+    <h2>hello Javascript!</h2>
+    <div class="box">div 1</div>
+    <div class="box">div 2</div>
+    <div class="box">div 3</div>
+    <script>
+        // Create a H2 heading element with text - “Hello JavaScript”. Append “from Apna Collegestudents” to this text using JS.
+        let heading = document.querySelector("h2")
+        heading.innerText += " from apna collage"
+
+        // Qs. Create 3 divs with common class name - “box” . Access them & add some unique text to each of them
+        let divs = document.querySelectorAll(".box")
+
+        // console.log(divs[0])
+        // console.log(divs[1])
+        // console.log(divs[2])
+
+        let temp = 0;
+
+        for (value of divs) {
+            // console.log(value)
+            value.innerText = `this is changed value of div ${temp} `
+            temp++;
+        }
+        // divs[0].innerText="Changed!! div-1"
+        // divs[1].innerText="Changed!! div-2"
+        // divs[2].innerText="Changed!! div-3"
+    </script>
+    <!-- <script src="practise.js"></script> -->
+</body>
+
+</html>
