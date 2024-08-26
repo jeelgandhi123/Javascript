@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practise.css">
+    <title>practise Javascript!!</title>
+</head>
+<body>
+    <div>
+        <img src="https://shorturl.at/IqSfn" alt="img1" height="100px">
+        <img src="https://shorturl.at/OIqaE" alt="img2" height="100px">
+        <h2>THE END!!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div id="innerdiv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga vero ipsa repudiandae totam voluptates voluptatem temporibus, dolore illo itaque ea reiciendis eaque recusandae sed fugiat, sunt dolorem, labore nisi iste!</div>
+        <h1 style="visibility: hidden;">hello</h1>
+    </div>
+    <script>
+        // DOM PROPERTIES 
+// 1.Tagname
+let content=document.querySelector("h2");
+console.log(content);
+console.log(content.tagName)
+
+// 2.innertext
+let changetext=document.querySelector("p");
+changetext.innerText="this is changed text";
+
+// 3.innerhtml 
+let example1=document.querySelector("#innerdiv");
+example1.innerHTML="<div>CHANGED DIV</div>";
+
+// 4.textcontent-give hidden value also
+let example2=document.querySelector("h1");
+console.log(example2.textContent)
+    </script>
+    <!-- <script src="practise.js"></script> -->
+</body>
+
+</html>
