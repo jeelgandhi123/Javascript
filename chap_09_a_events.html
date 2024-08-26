@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="practise.css"> -->
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            color: white;
+            background-color: red;
+            margin: 7px;
+            border: 2px solid black;
+        }
+    </style>
+    <title>practise javascript</title>
+</head>
+
+<body>
+    <button id="btn1">click me</button>
+    <button id="btn2">click me 2 times</button>
+    <div id="box">this is div</div>
+    <script>
+        // eventhandling in js is more priority than inline eventhandling
+        let btn1 = document.querySelector("#btn1")
+        btn1.onclick = () => {
+            console.log("HANDLER1");
+        }
+        // after written js will be printed first
+        btn1.onclick = () => {
+            console.log("HANDLER2");
+        }
+
+        let div = document.querySelector("#box")
+        div.onmouseover = () => {
+            console.log("your cursor inside the box")
+        }
+
+        let btn2 = document.querySelector("#btn2")
+        // btn2.ondblclick=(evt)=>{
+        //     console.log("button 2 was clicked");
+        //     console.log(evt.target)
+        //     console.log(evt.type)
+        //     console.log(evt.clientX,evt.clientY)
+        // }
+
+        // easy way to creat handler
+        btn2.addEventListener("click", () => {
+            console.log("btn 2 was clicked")
+        })
+    </script>
+    <!-- <script src="practise.js"></script> -->
+</body>
+
+</html>
